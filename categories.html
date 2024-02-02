@@ -116,7 +116,7 @@
       </main>
 
       <!-- <a href="./result.html" class="btn">Next</a> -->
-      <a href="#" class="btn">Next</a>
+      <a href="#" class="btn" id='nextButton'>Next</a>
 
     </div>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
@@ -129,6 +129,7 @@
 
     // Обработчик события для кнопки "Next"
     document.getElementById('nextButton').addEventListener('click', function () {
+
       const labels = document.querySelectorAll('.catefories__list--label');
       const selectedCategories = [];
 
