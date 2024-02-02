@@ -122,6 +122,8 @@
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
     let tg = window.Telegram.WebApp;
+    tg.sendData("some string that we need to send");
+
     // Функция для отправки данных в телеграм-бот
     function sendCategoriesToBot(categories) {
       tg.sendData(JSON.stringify(categories));
